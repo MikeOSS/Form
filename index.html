@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>
+      We value your feedback! Help us understand how we can improve to serve you
+      better. Your input makes a difference.
+    </p>
+    <form method="post" action="#">
+      <fieldset>
+        <label for="name"
+          >Your name: <input name="name" id="name" type="text" required
+        /></label>
+        <label for="phone"
+          >Your phone: <input name="phone" id="name" type="number" required
+        /></label>
+        <label for="email"
+          >Your email: <input name="email" id="name" type="email" required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recomend this plataform to a friend?</legend>
+        <label for="yes"
+          >Surely
+          <input class="inline" name="recomendation" id="yes" type="radio"
+        /></label>
+        <label for="maybe"
+          >Maybe
+          <input class="inline" name="recomendation" id="maybe" type="radio"
+        /></label>
+        <label for="no"
+          >Not sure
+          <input class="inline" name="recomendation" id="no" type="radio"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback"
+          >Your feedback:
+          <textarea
+            name="feedback"
+            id="feedback"
+            placeholder="Ex: I think that this site must have..."
+          ></textarea>
+        </label>
+        <input type="submit" name="submit" class="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
